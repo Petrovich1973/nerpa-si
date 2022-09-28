@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {Container, Paper} from "@mui/material"
+import Review from "./components/Review"
+import CheckboxesTags from "./components/Checkboxes"
+import CheckboxesGroup from "./components/Checkbox"
+import SwitchLabels from "./components/Switch"
+import StickyHeadTable from "./components/Table"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container component="main" maxWidth="md" sx={{mb: 4}}>
+            <Paper variant="outlined" sx={{my: {xs: 3, md: 6}, p: {xs: 2, md: 3}}}>
+                <Review/>
+                <CheckboxesTags/>
+                <CheckboxesGroup/>
+                <SwitchLabels/>
+            </Paper>
+            <StickyHeadTable/>
+        </Container>
+    )
 }
 
-export default App;
+export default App
