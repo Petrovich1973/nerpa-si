@@ -67,10 +67,17 @@
 
 .tableProcessIdMegaToContour {
     border-spacing: 5px 4px;
+    font-size: 78%;
+    width: 100%;
+}
+
+.tableProcessIdMegaToContour .rowIdMegas th {
+    background-color: #CBCBCB;
+    color: #000000;
 }
 
 .tableProcessIdMegaToContour th {
-    padding: 5px 10px;
+    padding: 5px;
     user-select: none;
     cursor: default;
     box-sizing: border-box;
@@ -80,11 +87,16 @@
 }
 
 .tableProcessIdMegaToContour td {
-    padding: 5px 10px;
+    padding: 5px;
     user-select: none;
     cursor: default;
     box-sizing: border-box;
     vertical-align: top;
+    text-align: center;
     border-radius: 4px;
-    background-color: #a5a5a5;
+    background-color: #E6E6E6;
+}
+
+.tableProcessIdMegaToContour tr:hover td {
+    background-color: #d0d0d0;
 }
