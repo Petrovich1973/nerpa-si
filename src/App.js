@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
 import {ContextApp, initialState, reducerApp} from "./reducer.js"
 import PageDashboard from "./pages/PageDashboard"
 import PageNotFound from "./pages/PageNotFound"
+import PageCreateTransitionProcess from "./pages/PageCreateTransitionProcess"
 
 const theme = createTheme({
     palette: {
@@ -28,6 +29,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<Navigate to="/dashboard"/>}/>
                         <Route path={'/dashboard'} element={<PageDashboard />}/>
+                        <Route path={'/create'} element={<PageCreateTransitionProcess />}/>
                         <Route path={'/not-found'} element={<PageNotFound/>}/>
                         <Route path="*" element={<Navigate to="/not-found"/>}/>
                     </Routes>

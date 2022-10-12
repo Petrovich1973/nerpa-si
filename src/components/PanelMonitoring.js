@@ -1,12 +1,16 @@
+import * as React from "react"
 import IconActionTransition from "../icons/IconActionTransition"
 import {Button} from "@mui/material"
 import IconQueue from "../icons/IconQueue"
-import * as React from "react"
+import { Link } from "react-router-dom"
+
 
 const PanelMonitoring = () => {
     return (
         <div className={'panelMonitoring'}>
             <Button
+                component={Link}
+                to="/create"
                 variant="contained"
                 size="medium"
                 startIcon={<IconActionTransition width="24" height="24"/>}
