@@ -4,6 +4,7 @@ import PanelMonitoring from "../components/PanelMonitoring"
 import StateIdMegaMonitoring from "../components/StateIdMegaMonitoring"
 
 export default function PageDashboard() {
+    console.log("PageDashboard = ", process.env.PUBLIC_URL)
 
     return (
         <div>

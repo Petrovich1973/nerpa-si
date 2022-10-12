@@ -131,7 +131,7 @@ export default function StateIdMegaConfiguration() {
                     <Box sx={{m: 1}}>
                         <Button
                             component={Link}
-                            to="/dashboard"
+                            to={`${process.env.PUBLIC_URL}/dashboard`}
                             variant="contained"
                             // size={'small'}
                             startIcon={<CloseIcon/>}

@@ -10,7 +10,7 @@ const PanelMonitoring = () => {
         <div className={'panelMonitoring'}>
             <Button
                 component={Link}
-                to="/create"
+                to={`${process.env.PUBLIC_URL}/create`}
                 variant="contained"
                 size="medium"
                 startIcon={<IconActionTransition width="24" height="24"/>}
