@@ -1,23 +1,39 @@
 import './App.css'
-import {Container, Paper} from "@mui/material"
-import Review from "./components/Review"
-import CheckboxesTags from "./components/Checkboxes"
-import CheckboxesGroup from "./components/Checkbox"
-import SwitchLabels from "./components/Switch"
-import StickyHeadTable from "./components/Table"
+import * as React from "react"
+import {Container, CssBaseline} from "@mui/material"
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
+import {ContextApp, initialState, reducerApp} from "./reducer.js"
+import PageDashboard from "./pages/PageDashboard"
+import PageNotFound from "./pages/PageNotFound"
 
-function App() {
+const theme = createTheme({
+    palette: {
+        background: {
+            default: "#F3F3F3"
+        }
+    }
+});
+
+
+export default function App() {
+    const [state, dispatch] = React.useReducer(reducerApp, initialState)
+
     return (
-        <Container component="main" maxWidth="md" sx={{mb: 4}}>
-            <Paper variant="outlined" sx={{my: {xs: 3, md: 6}, p: {xs: 2, md: 3}}}>
-                <Review/>
-                <CheckboxesTags/>
-                <CheckboxesGroup/>
-                <SwitchLabels/>
-            </Paper>
-            <StickyHeadTable/>
-        </Container>
+        <ContextApp.Provider value={{state, dispatch}}>
+            <ThemeProvider theme={theme}>
+            <Container component="main" maxWidth="xl" sx={{mb: 4}}>
+                <BrowserRouter>
+                    <CssBaseline/>
+                    <Routes>
+                        <Route path="/" element={<Navigate to="/dashboard"/>}/>
+                        <Route path={'/dashboard'} element={<PageDashboard />}/>
+                        <Route path={'/not-found'} element={<PageNotFound/>}/>
+                        <Route path="*" element={<Navigate to="/not-found"/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </Container>
+            </ThemeProvider>
+        </ContextApp.Provider>
     )
 }
-
-export default App

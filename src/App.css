@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.panelMonitoring {
+    display: flex;
+    align-items: stretch;
+}
+.panelMonitoring > * + * {
+    margin-left: 20px;
+}
+.panelMonitoring_queueBox {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 4px;
+    line-height: 1;
+}
+.panelMonitoring_queueBox > * + * {
+    margin-left: 5px;
+}
+.panelMonitoring_queueBox_iconBox {
+    display: flex;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tableStateIdMegaToContour {
+    border-spacing: 5px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tableStateIdMegaToContour td {
+    padding: 5px 10px;
+    user-select: none;
+    cursor: default;
+    width: 60px;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tableStateIdMegaToContour.configurationMode td {
+    cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableStateIdMegaToContour td + td {
+    text-align: center;
 }
