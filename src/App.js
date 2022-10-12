@@ -27,11 +27,11 @@ export default function App() {
                 <BrowserRouter>
                     <CssBaseline/>
                     <Routes>
-                        <Route path={`${process.env.PUBLIC_URL}/`} element={<Navigate to="/dashboard"/>}/>
+                        <Route path={`${process.env.PUBLIC_URL}/`} element={<Navigate to={`${process.env.PUBLIC_URL}/dashboard`}/>}/>
                         <Route path={`${process.env.PUBLIC_URL}/dashboard`} element={<PageDashboard />}/>
                         <Route path={`${process.env.PUBLIC_URL}/create`} element={<PageCreateTransitionProcess />}/>
                         <Route path={`${process.env.PUBLIC_URL}/not-found`} element={<PageNotFound/>}/>
-                        <Route path={`${process.env.PUBLIC_URL}/*`} element={<Navigate to="/not-found"/>}/>
+                        <Route path={`${process.env.PUBLIC_URL}/*`} element={<Navigate to={`${process.env.PUBLIC_URL}/not-found`}/>}/>
                     </Routes>
                 </BrowserRouter>
             </Container>
