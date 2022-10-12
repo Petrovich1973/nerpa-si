@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2229a68c-54a9-430f-95ae-06d83cf7dba8" name="Default Changelist" comment="создал таблицу процесса в статике" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2FOqC4HqBVkZiuePmdx5XiCTW6v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\nerpa-si-github\src" />
+      <recent name="C:\Projects\nerpa-si-github" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.deploy">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2229a68c-54a9-430f-95ae-06d83cf7dba8" name="Default Changelist" comment="" />
+      <created>1664373346308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664373346308</updated>
+      <workItem from="1664373347685" duration="4083000" />
+      <workItem from="1665126369499" duration="32958000" />
+      <workItem from="1665569795278" duration="29912000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1664382023742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664382023742</updated>
+    </task>
+    <task id="LOCAL-00002" summary="examples mui components">
+      <created>1664397999778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664397999778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="форма создания задачи перехода. отрисовка ТБ в разрезе контуров.">
+      <created>1665569928567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665569928567</updated>
+    </task>
+    <task id="LOCAL-00004" summary="форма создания задачи перехода done">
+      <created>1665599485703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665599485703</updated>
+    </task>
+    <task id="LOCAL-00005" summary="настройки для публикации">
+      <created>1665601435135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665601435135</updated>
+    </task>
+    <task id="LOCAL-00006" summary="настройки для публикации process.env.PUBLIC_URL">
+      <created>1665602784127</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665602784127</updated>
+    </task>
+    <task id="LOCAL-00007" summary="настройки для публикации to = process.env.PUBLIC_URL">
+      <created>1665603286954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665603286954</updated>
+    </task>
+    <task id="LOCAL-00008" summary="настройки для публикации 2">
+      <created>1665603880123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665603880123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="настройки для публикации 3">
+      <created>1665604015146</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665604015146</updated>
+    </task>
+    <task id="LOCAL-00010" summary="создаю таблицу процесса">
+      <created>1665610620516</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665610620516</updated>
+    </task>
+    <task id="LOCAL-00011" summary="создал таблицу процесса в статике">
+      <created>1665612368107</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665612368107</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="examples mui components" />
+    <MESSAGE value="форма создания задачи перехода. отрисовка ТБ в разрезе контуров." />
+    <MESSAGE value="форма создания задачи перехода done" />
+    <MESSAGE value="настройки для публикации" />
+    <MESSAGE value="настройки для публикации process.env.PUBLIC_URL" />
+    <MESSAGE value="настройки для публикации to = process.env.PUBLIC_URL" />
+    <MESSAGE value="настройки для публикации 2" />
+    <MESSAGE value="настройки для публикации 3" />
+    <MESSAGE value="создаю таблицу процесса" />
+    <MESSAGE value="создал таблицу процесса в статике" />
+    <option name="LAST_COMMIT_MESSAGE" value="создал таблицу процесса в статике" />
+  </component>
+</project>
