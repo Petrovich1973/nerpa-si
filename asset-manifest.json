@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nerpa-si/static/css/main.c3fdf9b8.css",
-    "main.js": "/nerpa-si/static/js/main.f2a8c84e.js",
+    "main.js": "/nerpa-si/static/js/main.5c3d4f9b.js",
     "static/js/787.d7e3afc0.chunk.js": "/nerpa-si/static/js/787.d7e3afc0.chunk.js",
     "index.html": "/nerpa-si/index.html",
     "main.c3fdf9b8.css.map": "/nerpa-si/static/css/main.c3fdf9b8.css.map",
-    "main.f2a8c84e.js.map": "/nerpa-si/static/js/main.f2a8c84e.js.map",
+    "main.5c3d4f9b.js.map": "/nerpa-si/static/js/main.5c3d4f9b.js.map",
     "787.d7e3afc0.chunk.js.map": "/nerpa-si/static/js/787.d7e3afc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3fdf9b8.css",
-    "static/js/main.f2a8c84e.js"
+    "static/js/main.5c3d4f9b.js"
   ]
 }
