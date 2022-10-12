@@ -12,6 +12,7 @@
 /build
 
 /copy
+/.idea
 
 # misc
 .DS_Store
