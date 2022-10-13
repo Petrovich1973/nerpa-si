@@ -2,9 +2,11 @@
     display: flex;
     align-items: stretch;
 }
+
 .panelMonitoring > * + * {
     margin-left: 20px;
 }
+
 .panelMonitoring_queueBox {
     display: flex;
     align-items: center;
@@ -13,9 +15,11 @@
     border-radius: 4px;
     line-height: 1;
 }
+
 .panelMonitoring_queueBox > * + * {
     margin-left: 5px;
 }
+
 .panelMonitoring_queueBox_iconBox {
     display: flex;
     align-items: center;
@@ -25,6 +29,7 @@
     position: relative;
     height: 0;
 }
+
 .toMain:after {
     content: '';
     position: absolute; /* Абсолютное позиционирование */
@@ -34,6 +39,7 @@
     border: 20px solid transparent; /* Прозрачные границы */
     border-bottom: 10px solid #7e7e7e; /* Добавляем треугольник */
 }
+
 .toSi:after {
     content: '';
     position: absolute; /* Абсолютное позиционирование */
@@ -61,30 +67,48 @@
 .tableStateIdMegaToContour.configurationMode td {
     cursor: pointer;
 }
+
 .tableStateIdMegaToContour td + td {
     text-align: center;
 }
 
 .tableProcessIdMegaToContour {
-    border-spacing: 5px 4px;
+    font-size: 78%;
+    border-spacing: 4px 4px;
+    width: 100%;
 }
 
 .tableProcessIdMegaToContour th {
-    padding: 5px 10px;
+    padding: 0 4px;
     user-select: none;
     cursor: default;
     box-sizing: border-box;
 }
+
 .tableProcessIdMegaToContour th:empty, .tableProcessIdMegaToContour td:empty {
-    padding: 1px 2px;
+    padding: 6px;
 }
 
 .tableProcessIdMegaToContour td {
-    padding: 5px 10px;
+    padding: 0 4px;
     user-select: none;
     cursor: default;
     box-sizing: border-box;
-    vertical-align: top;
     border-radius: 4px;
-    background-color: #a5a5a5;
+    background-color: #E6E6E6;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableProcessIdMegaToContour td.dark {
+    background-color: #CBCBCB;
+    text-align: left;
+}
+
+.tableProcessIdMegaToContour td.dark strong {
+    font-size: 120%;
+}
+
+.tableProcessIdMegaToContour tbody tr:hover td:not(.dark) {
+    background-color: #c4c4c4;
 }

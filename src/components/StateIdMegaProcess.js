@@ -1,9 +1,56 @@
 import * as React from "react"
 import {ContextApp} from "../reducer"
+import {CONST_UPDATE_GLOBAL} from "../constants";
+
+const seconds = 3;
+
+function delay(millis) {
+    let cancelTimer;
+    const promise = new Promise((resolve, reject) => {
+        const timeoutID = setTimeout(() => {
+            resolve('done');
+        }, millis);
+        cancelTimer = () => {
+            clearTimeout(timeoutID);
+        };
+    });
+    return [promise, cancelTimer];
+}
 
 export default function StateIdMegaProcess() {
 
-    const {state} = React.useContext(ContextApp)
+    const {state, dispatch} = React.useContext(ContextApp)
+    const [promise, cancelTimer] = delay(seconds * 1000);
+
+    // React.useEffect(() => {
+    //
+    // }, [state])
+
+    function fetchToDos() {
+        const applicationsNew = state.applications
+            .map(application => {
+                return ({...application, process: {...application.process, backgroundProcess: {...application.process.backgroundProcess, main:application.process.backgroundProcess.main.map(m => ({...m, nodeCount: m.nodeCount + 2}))}}})
+            })
+        dispatch({type: CONST_UPDATE_GLOBAL, payload: {applications: applicationsNew}})
+        console.log(111111)
+    }
+
+    React.useEffect(() => {
+        const abortController = new AbortController()
+
+        async function goFetch() {
+            await promise;
+            await fetchToDos()
+        }
+
+        goFetch()
+
+        return () => {
+            console.log('unMount')
+            cancelTimer()
+            abortController.abort()
+        }
+    }, [state])
 
     return (
         <div>
@@ -12,129 +59,64 @@ export default function StateIdMegaProcess() {
                 <tr>
                     <th colSpan="2" rowSpan="2"/>
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th colSpan="3">Main</th>
+                    <th colSpan="11">Main</th>
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th colSpan="3">Stop</th>
+                    <th colSpan="11">Stop</th>
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th colSpan="3">StandIn</th>
+                    <th colSpan="11">StandIn</th>
                 </tr>
                 <tr>
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th>13</th>
-                    <th>16</th>
-                    <th>38</th>
+                    {state.idMega.map((idMega) => (
+                        <th className={'dark'} key={idMega}>{idMega}</th>
+                    ))}
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th>13</th>
-                    <th>16</th>
-                    <th>38</th>
+                    {state.idMega.map((idMega) => (
+                        <th className={'dark'} key={idMega}>{idMega}</th>
+                    ))}
                     <th style={{backgroundColor: "transparent"}}/>
-                    <th>13</th>
-                    <th>16</th>
-                    <th>38</th>
+                    {state.idMega.map((idMega) => (
+                        <th className={'dark'} key={idMega}>{idMega}</th>
+                    ))}
                 </tr>
                 </thead>
-                <tbody><tr><td colSpan="11" style={{backgroundColor: "transparent"}} height={10}/></tr></tbody>
-                <tbody>
-                <tr>
-                    <td rowSpan="2">FORD</td>
-                    <td>фоновые</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>125</td>
-                    <td>125</td>
-                    <td>125</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                <tr>
-                    <td>онлайн</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>125</td>
-                    <td>125</td>
-                    <td>125</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                </tbody>
-                <tbody><tr><td colSpan="11" style={{backgroundColor: "transparent"}} height={10}/></tr></tbody>
-                <tbody>
-                <tr>
-                    <td rowSpan="2">MKS</td>
-                    <td>фоновые</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>46</td>
-                    <td>46</td>
-                    <td>46</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                <tr>
-                    <td>онлайн</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>46</td>
-                    <td>46</td>
-                    <td>46</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                </tbody>
-                <tbody><tr><td colSpan="11" style={{backgroundColor: "transparent"}} height={10}/></tr></tbody>
-                <tbody>
-                <tr>
-                    <td rowSpan="2">COD</td>
-                    <td>фоновые</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>75</td>
-                    <td>75</td>
-                    <td>75</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                <tr>
-                    <td>онлайн</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td>75</td>
-                    <td>75</td>
-                    <td>75</td>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td style={{backgroundColor: "transparent"}}/>
-                    <td/>
-                    <td/>
-                    <td/>
-                </tr>
-                </tbody>
+
+                {state.applications.map((application, applicationsIdx) => (
+                    <React.Fragment key={applicationsIdx}>
+                        <tbody>
+                        <tr>
+                            <td colSpan="38" style={{backgroundColor: "transparent"}} height={10}/>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td rowSpan="2" className={'dark'}><strong>{application.name}</strong></td>
+                            <td className={'dark'}>фоновые</td>
+                            {Object.keys(application.process.backgroundProcess).map((key, idx) => (
+                                <React.Fragment key={key}>
+                                    <td style={{backgroundColor: "transparent"}}/>
+                                    {application.process.backgroundProcess[key]
+                                        .map(((tb, tbIdx) => (
+                                            <td key={tbIdx}>{(tb.nodeCount !== 0) && tb.nodeCount}</td>
+                                        )))}
+                                </React.Fragment>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td className={'dark'}>онлайн</td>
+                            {Object.keys(application.process.onlineProcess)
+                                .map((key, idx) => (
+                                    <React.Fragment key={key}>
+                                        <td style={{backgroundColor: "transparent"}}/>
+                                        {application.process.onlineProcess[key].map(((tb, tbIdx) => (
+                                            <td key={tbIdx}>{(tb.nodeCount !== 0) && tb.nodeCount}</td>
+                                        )))}
+                                    </React.Fragment>
+                                ))}
+                        </tr>
+                        </tbody>
+                    </React.Fragment>
+                ))}
             </table>
         </div>
     )
