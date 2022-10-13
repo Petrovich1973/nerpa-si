@@ -1,26 +1,32 @@
 import * as React from "react"
 import {ContextApp} from "../reducer"
-import {CONST_UPDATE_GLOBAL} from "../constants";
+import {CONST_UPDATE_GLOBAL} from "../constants"
 
-const seconds = 3;
+const seconds = 1
 
 function delay(millis) {
-    let cancelTimer;
+    let cancelTimer = () => {}
     const promise = new Promise((resolve, reject) => {
         const timeoutID = setTimeout(() => {
-            resolve('done');
-        }, millis);
+            resolve('done')
+        }, millis)
         cancelTimer = () => {
-            clearTimeout(timeoutID);
-        };
-    });
-    return [promise, cancelTimer];
+            clearTimeout(timeoutID)
+        }
+    })
+    return [promise, cancelTimer]
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 export default function StateIdMegaProcess() {
 
     const {state, dispatch} = React.useContext(ContextApp)
-    const [promise, cancelTimer] = delay(seconds * 1000);
+    const [promise, cancelTimer] = delay(seconds * 1000)
 
     // React.useEffect(() => {
     //
@@ -28,18 +34,30 @@ export default function StateIdMegaProcess() {
 
     function fetchToDos() {
         const applicationsNew = state.applications
-            .map(application => {
-                return ({...application, process: {...application.process, backgroundProcess: {...application.process.backgroundProcess, main:application.process.backgroundProcess.main.map(m => ({...m, nodeCount: m.nodeCount + 2}))}}})
-            })
+            .map(application => ({
+                ...application,
+                process: {
+                    ...application.process,
+                    backgroundProcess: {
+                        ...application.process.backgroundProcess,
+                        main: application.process.backgroundProcess.main.map(m => {
+                            const minus = m.nodeCount > 4 ? getRandomInt(1,5) : m.nodeCount
+                            return ({
+                                ...m,
+                                nodeCount: m.nodeCount - minus
+                            })
+                        })
+                    }
+                }
+            }))
         dispatch({type: CONST_UPDATE_GLOBAL, payload: {applications: applicationsNew}})
-        console.log(111111)
     }
 
     React.useEffect(() => {
         const abortController = new AbortController()
 
         async function goFetch() {
-            await promise;
+            await promise
             await fetchToDos()
         }
 

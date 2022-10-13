@@ -5,21 +5,39 @@ import Moment from "moment"
 Moment.locale('ru')
 export const ContextApp = createContext(null)
 
+const configInitial = {
+    goal: null,
+    selected: [],
+    forcedTransition: false,
+    threshold: '50000',
+}
+
+const pathTransition = {
+    1: ['main', 'stop'],
+    2: ['main', 'stop', 'standIn'],
+    3: ['standIn', 'stop'],
+    4: ['standIn', 'stop', 'main'],
+    5: ['stop', 'standIn'],
+    6: ['stop', 'main']
+}
+
 export const initialState = {
-    idMega: ['13', '16', '18', '38', '40', '42', '44', '52', '54', '55', '70'],
-    contour: ['main', 'stop', 'standIn'],
     relationship: [
-        {idMega: '13', contour: 'main'},
-        {idMega: '16', contour: 'main'},
-        {idMega: '18', contour: 'main'},
-        {idMega: '38', contour: 'stop'},
-        {idMega: '40', contour: 'main'},
-        {idMega: '42', contour: 'standIn'},
-        {idMega: '44', contour: 'main'},
-        {idMega: '52', contour: 'standIn'},
-        {idMega: '54', contour: 'main'},
-        {idMega: '55', contour: 'main'},
-        {idMega: '70', contour: 'main'},
+        {idMega: '13', contour: 'main', goal: null, path: null},
+        {idMega: '16', contour: 'main', goal: null, path: null},
+        {idMega: '18', contour: 'main', goal: null, path: null},
+        {idMega: '38', contour: 'stop', goal: null, path: null},
+        {idMega: '40', contour: 'main', goal: null, path: null},
+        {idMega: '42', contour: 'standIn', goal: null, path: null},
+        {idMega: '44', contour: 'main', goal: null, path: null},
+        {idMega: '52', contour: 'standIn', goal: null, path: null},
+        {idMega: '54', contour: 'main', goal: null, path: null},
+        {idMega: '55', contour: 'main', goal: null, path: null},
+        {idMega: '70', contour: 'main', goal: null, path: null},
+    ],
+    configTransition: configInitial,
+    processTransition: [
+        {idMega: '13', contour: 'main'}
     ],
     applications: [
         {
@@ -980,6 +998,10 @@ export const initialState = {
             }
         }
     ],
+
+    // Справочники
+    idMega: ['13', '16', '18', '38', '40', '42', '44', '52', '54', '55', '70'],
+    contour: ['main', 'stop', 'standIn'],
     processName: {
         backgroundProcess: 'фоновые',
         onlineProcess: 'онлайн'
