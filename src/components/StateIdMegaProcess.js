@@ -6,7 +6,7 @@ const seconds = 1
 
 function delay(millis) {
     let cancelTimer = () => {}
-    const promise = new Promise((resolve, reject) => {
+    const promise = new Promise((resolve) => {
         const timeoutID = setTimeout(() => {
             resolve('done')
         }, millis)
@@ -14,7 +14,7 @@ function delay(millis) {
             clearTimeout(timeoutID)
         }
     })
-    return [promise, cancelTimer]
+    return ({promise, cancelTimer})
 }
 
 function getRandomInt(min, max) {
@@ -26,7 +26,7 @@ function getRandomInt(min, max) {
 export default function StateIdMegaProcess() {
 
     const {state, dispatch} = React.useContext(ContextApp)
-    const [promise, cancelTimer] = delay(seconds * 1000)
+    const {promise, cancelTimer} = delay(seconds * 1000)
 
     // React.useEffect(() => {
     //
@@ -71,7 +71,12 @@ export default function StateIdMegaProcess() {
     }, [state])
 
     return (
-        <div>
+        <div style={{
+            padding: '1.4em',
+            margin: '1em 0',
+            borderRadius: 4,
+            backgroundColor: "white"
+        }}>
             <table className={'tableProcessIdMegaToContour'}>
                 <thead>
                 <tr>
@@ -110,7 +115,7 @@ export default function StateIdMegaProcess() {
                         <tr>
                             <td rowSpan="2" className={'dark'}><strong>{application.name}</strong></td>
                             <td className={'dark'}>фоновые</td>
-                            {Object.keys(application.process.backgroundProcess).map((key, idx) => (
+                            {Object.keys(application.process.backgroundProcess).map((key) => (
                                 <React.Fragment key={key}>
                                     <td style={{backgroundColor: "transparent"}}/>
                                     {application.process.backgroundProcess[key]
@@ -123,7 +128,7 @@ export default function StateIdMegaProcess() {
                         <tr>
                             <td className={'dark'}>онлайн</td>
                             {Object.keys(application.process.onlineProcess)
-                                .map((key, idx) => (
+                                .map((key) => (
                                     <React.Fragment key={key}>
                                         <td style={{backgroundColor: "transparent"}}/>
                                         {application.process.onlineProcess[key].map(((tb, tbIdx) => (

@@ -8,6 +8,7 @@ const thresholdInitial = '50000'
 export default function StateIdMegaConfiguration() {
 
     const {state} = React.useContext(ContextApp)
+    const {relationship} = state
     const [newRelationship, setNewRelationship] = React.useState([])
     const [goal, setGoal] = React.useState(null)
     const [selected, setSelected] = React.useState([])
@@ -24,8 +25,8 @@ export default function StateIdMegaConfiguration() {
     }, [newRelationship, state])
 
     React.useEffect(() => {
-        setNewRelationship(state.relationship)
-    }, [state])
+        setNewRelationship(relationship)
+    }, [relationship])
 
     const onClickTd = (td) => {
         const newState = newRelationship.map(relationship => {
@@ -127,85 +128,83 @@ export default function StateIdMegaConfiguration() {
                             value={threshold}
                             onChange={onChangeThreshold}/>
                     </Box>
-
-                    <Box sx={{m: 1}}>
-                        <Button
-                            component={Link}
-                            to={`${process.env.PUBLIC_URL}/dashboard`}
-                            variant="contained"
-                            // size={'small'}
-                            startIcon={<CloseIcon/>}
-                            sx={{backgroundColor: '#000000'}}>
-                            Отказаться от перехода
-                        </Button>
-                    </Box>
-
                 </Box>
+                <div style={{display: "flex", margin: '1em 0', alignItems: "center", justifyContent: "flex-end"}}>
+                    <Button
+                        component={Link}
+                        to={`${process.env.PUBLIC_URL}/dashboard`}
+                        variant="contained"
+                        // size={'small'}
+                        startIcon={<CloseIcon/>}
+                        sx={{backgroundColor: '#000000'}}>
+                        Отказаться от перехода
+                    </Button>
+                    &nbsp;&nbsp;
+                    <Button
+                        disabled={!selected.length && !forcedTransition && threshold === thresholdInitial}
+                        variant="outlined"
+                        onClick={onReset}>
+                        Reset
+                    </Button>
+                    &nbsp;&nbsp;
+                    <Button variant="contained" onClick={() => alert('Send!')} disabled={!selected.length}>
+                        {selected.length ? 'Поехали!' : 'Не выбраны Тб'}
+                    </Button>
+                </div>
             </div>
 
+            <div style={{textAlign: "center"}}>
+                <table className={'tableStateIdMegaToContour configurationMode'}>
+                    <tbody>
+                    {state.contour
+                        // .filter(contour => contour !== 'stop')
+                        .map(contour => (
+                            <tr key={contour}>
+                                <td onClick={() => onClickTr(contour)}>{contour}</td>
+                                {state.idMega.map(idMega => {
 
-            <table className={'tableStateIdMegaToContour configurationMode'}>
-                <tbody>
-                {state.contour
-                    // .filter(contour => contour !== 'stop')
-                    .map(contour => (
-                        <tr key={contour}>
-                            <td onClick={() => onClickTr(contour)}>{contour}</td>
-                            {state.idMega.map(idMega => {
+                                    const contourOrigin = state.relationship
+                                        .find(relationship => relationship.idMega === idMega)?.contour
 
-                                const contourOrigin = state.relationship
-                                    .find(relationship => relationship.idMega === idMega)?.contour
+                                    const contourGoal = newRelationship
+                                        .find(relationship => relationship.idMega === idMega)?.contour
 
-                                const contourGoal = newRelationship
-                                    .find(relationship => relationship.idMega === idMega)?.contour
+                                    const isMatch = contourGoal === contour
 
-                                const isMatch = contourGoal === contour
+                                    const isMatchOrigin = contourOrigin === contour
 
-                                const isMatchOrigin = contourOrigin === contour
+                                    const backgroundColor = (isMatch || isMatchOrigin) ? state.color[contour] : 'white'
 
-                                const backgroundColor = (isMatch || isMatchOrigin) ? state.color[contour] : 'white'
+                                    const opacity = (isMatchOrigin && !isMatch) ? 0.3 : 1
 
-                                const opacity = (isMatchOrigin && !isMatch) ? 0.3 : 1
+                                    const boxShadow = (isMatch && !isMatchOrigin) ? 'inset 0 0 0 2px #7e7e7e' : 'none'
 
-                                const boxShadow = (isMatch && !isMatchOrigin) ? 'inset 0 0 0 2px #7e7e7e' : 'none'
+                                    return (
+                                        <td
+                                            onClick={() => onClickTd({idMega, contour, contourOrigin})}
+                                            key={idMega}
+                                            style={{backgroundColor, opacity, boxShadow}}>
 
-                                return (
-                                    <td
-                                        onClick={() => onClickTd({idMega, contour, contourOrigin})}
-                                        key={idMega}
-                                        style={{backgroundColor, opacity, boxShadow}}>
+                                            {(isMatch && !isMatchOrigin) && (
+                                                <div
+                                                    className={`${(contourOrigin === 'main' || contourOrigin === 'stop') &&
+                                                    (contourGoal === 'standIn' || contourGoal === 'stop') ? (
+                                                        'toSi'
+                                                    ) : (
+                                                        'toMain'
+                                                    )}`}/>
+                                            )}
 
-                                        {(isMatch && !isMatchOrigin) && (
-                                            <div
-                                                className={`${(contourOrigin === 'main' || contourOrigin === 'stop') &&
-                                                (contourGoal === 'standIn' || contourGoal === 'stop') ? (
-                                                    'toSi'
-                                                ) : (
-                                                    'toMain'
-                                                )}`}/>
-                                        )}
+                                            {(isMatchOrigin || isMatch) ? idMega : ''}
 
-                                        {(isMatchOrigin || isMatch) ? idMega : ''}
-
-                                    </td>
-                                )
-                            })}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-
-            <Button
-                disabled={!selected.length && !forcedTransition && threshold === thresholdInitial}
-                variant="outlined"
-                onClick={onReset}>
-                Reset
-            </Button>
-            &nbsp;&nbsp;
-            <Button variant="contained" onClick={() => alert('Send!')} disabled={!selected.length}>
-                {selected.length ? 'Поехали!' : 'Не выбраны Тб'}
-            </Button>
-
+                                        </td>
+                                    )
+                                })}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

@@ -12,14 +12,14 @@ const configInitial = {
     threshold: '50000',
 }
 
-const pathTransition = {
-    1: ['main', 'stop'],
-    2: ['main', 'stop', 'standIn'],
-    3: ['standIn', 'stop'],
-    4: ['standIn', 'stop', 'main'],
-    5: ['stop', 'standIn'],
-    6: ['stop', 'main']
-}
+// const pathTransition = {
+//     1: ['main', 'stop'],
+//     2: ['main', 'stop', 'standIn'],
+//     3: ['standIn', 'stop'],
+//     4: ['standIn', 'stop', 'main'],
+//     5: ['stop', 'standIn'],
+//     6: ['stop', 'main']
+// }
 
 export const initialState = {
     relationship: [

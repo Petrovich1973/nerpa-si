@@ -6,7 +6,7 @@ export default function StateIdMegaMonitoring() {
     const {state} = React.useContext(ContextApp)
 
     return (
-        <div>
+        <div style={{textAlign: "center"}}>
             <table className={'tableStateIdMegaToContour'}>
                 <tbody>
                 {state.contour.map(contour => (
