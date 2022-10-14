@@ -86,7 +86,9 @@ export default function StateIdMegaConfiguration() {
                 <div style={{fontSize: '140%'}}>Конфигурация перехода:</div>
                 <Box sx={{display: "flex", m: -1, alignItems: "center"}}>
 
-                    {goal && <Box sx={{m: 1}}>Цель перехода: <strong style={{fontSize: '120%'}}>{goal}</strong></Box>}
+                    {Boolean(goal) && (
+                        <Box sx={{m: 1}}>Цель перехода: <strong style={{fontSize: '120%'}}>{goal}</strong></Box>
+                    )}
 
                     {Boolean(selected.length) && (
                         <Box sx={{m: 1, position: "relative"}}>

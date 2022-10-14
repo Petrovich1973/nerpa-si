@@ -5,21 +5,22 @@ import Moment from "moment"
 Moment.locale('ru')
 export const ContextApp = createContext(null)
 
-const configInitial = {
+export const configInitial = {
+    run: false,
     goal: null,
     selected: [],
     forcedTransition: false,
     threshold: '50000',
 }
 
-// const pathTransition = {
-//     1: ['main', 'stop'],
-//     2: ['main', 'stop', 'standIn'],
-//     3: ['standIn', 'stop'],
-//     4: ['standIn', 'stop', 'main'],
-//     5: ['stop', 'standIn'],
-//     6: ['stop', 'main']
-// }
+export const pathTransition = {
+    '1': ['main', 'stop'],
+    '2': ['main', 'stop', 'standIn'],
+    '3': ['standIn', 'stop'],
+    '4': ['standIn', 'stop', 'main'],
+    '5': ['stop', 'standIn'],
+    '6': ['stop', 'main']
+}
 
 export const initialState = {
     relationship: [
