@@ -28,10 +28,6 @@ export default function StateIdMegaProcess() {
     const {state, dispatch} = React.useContext(ContextApp)
     const {promise, cancelTimer} = delay(seconds * 1000)
 
-    // React.useEffect(() => {
-    //
-    // }, [state])
-
     function fetchToDos() {
         const applicationsNew = state.applications
             .map(application => ({
@@ -61,7 +57,7 @@ export default function StateIdMegaProcess() {
             await fetchToDos()
         }
 
-        goFetch()
+        void goFetch()
 
         return () => {
             console.log('unMount')

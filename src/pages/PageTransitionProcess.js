@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography"
 import IconActionTransition from "../icons/IconActionTransition"
 import StateIdMegaProcess from "../components/StateIdMegaProcess"
 import PanelProcess from "../components/PanelProcess"
+import WebSocketComponent from "../components/WebSocket"
 
 export default function PageTransitionProcess() {
 
@@ -17,8 +18,9 @@ export default function PageTransitionProcess() {
                 &nbsp;
                 <div>Процесс перехода</div>
             </Typography>
+            <WebSocketComponent/>
             <PanelProcess/>
-            <StateIdMegaProcess/>
+            {/*<StateIdMegaProcess/>*/}
         </div>
     )
 }

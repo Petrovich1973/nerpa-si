@@ -1,0 +1,337 @@
+{
+  "status": {
+    "run": true
+  },
+  "idMega": {
+    "13": {
+      "cursor": "main",
+      "goal": "standIn",
+      "phases": {
+        "main_stop_back": "ready",
+        "main_stop_online": "ready",
+        "stop_standIn_back": "ready",
+        "stop_standIn_online": "ready"
+      },
+      "applications": {
+        "FORT": {
+          "main": {
+            "back": 120,
+            "online": 120
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "MKS": {
+          "main": {
+            "back": 100,
+            "online": 100
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "COD99": {
+          "main": {
+            "back": 130,
+            "online": 130
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "CODbo": {
+          "main": {
+            "back": 60,
+            "online": 60
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "CODonline": {
+          "main": {
+            "back": 40,
+            "online": 40
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "LESkov": {
+          "main": {
+            "back": 55,
+            "online": 55
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "SHRAMko": {
+          "main": {
+            "back": 75,
+            "online": 75
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "POPoff": {
+          "main": {
+            "back": 12,
+            "online": 12
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "GLUshen": {
+          "main": {
+            "back": 90,
+            "online": 90
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "STRebuk": {
+          "main": {
+            "back": 30,
+            "online": 30
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "AllimKing": {
+          "main": {
+            "back": 210,
+            "online": 210
+          },
+          "stop": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        }
+      }
+    },
+    "16": {
+      "cursor": "stop",
+      "goal": "standIn",
+      "phases": {
+        "stop_standIn_back": "ready",
+        "stop_standIn_online": "ready"
+      },
+      "applications": {
+        "FORT": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 120,
+            "online": 120
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "MKS": {
+          "stop": {
+            "back": 100,
+            "online": 100
+          },
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "COD99": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 130,
+            "online": 130
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "CODbo": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 60,
+            "online": 60
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "CODonline": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 40,
+            "online": 40
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "LESkov": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 55,
+            "online": 55
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "SHRAMko": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 75,
+            "online": 75
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "POPoff": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 12,
+            "online": 12
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "GLUshen": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 90,
+            "online": 90
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "STRebuk": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 30,
+            "online": 30
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        },
+        "AllimKing": {
+          "main": {
+            "back": 0,
+            "online": 0
+          },
+          "stop": {
+            "back": 210,
+            "online": 210
+          },
+          "standIn": {
+            "back": 0,
+            "online": 0
+          }
+        }
+      }
+    }
+  }
+}
