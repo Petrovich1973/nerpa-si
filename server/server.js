@@ -33,14 +33,14 @@ io.sockets.on('connection', (socket) => {
 
 async function sendData(socket) {
 
-    const report = await axios.get(`${DB_URL}/status`)
+    const report = await axios.get(`${DB_URL}/idMega`)
     const result = await report.data
 
-    // socket.emit('data1', Array.from({length: 8}, () => Math.floor(Math.random() * 590) + 10))
-    socket.emit('statusRun', {...result})
+    // socket.emit('statusRun', {...result})
+    socket.emit('statusMega', result)
 
     setTimeout(() => {
         sendData(socket)
-    }, 1000)
+    }, 3000)
 
 }
