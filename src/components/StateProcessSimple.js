@@ -46,46 +46,43 @@ export default function StateProcessSimple() {
                 active === "stop_standIn_online") return (<div className={'directionToStandIn'}/>)
         }
 
-
         return ('')
     }
 
     return (
         <div style={{textAlign: "center"}}>
-            <table className={'tableStateIdMegaToContour'}>
-                <tbody>
-                {
-                    data ? (
-                        contour
-                            .map(row => (
-                                <React.Fragment key={row}>
-                                    <tr>
-                                        <td>{row}</td>
-                                        {mappingData(data).map(idMega => (
-                                            <td key={idMega.name}
-                                                style={{backgroundColor: getColor(row, idMega.cursor)}}>
-                                                {getValue(row, idMega.cursor, idMega.name, idMega.goal, row)}
-                                            </td>
-                                        ))}
-                                    </tr>
-                                    <tr className={'rowAction'}>
-                                        <td/>
-                                        {mappingData(data).map(idMega => (
-                                            <td key={idMega.name}>
-                                                {getActivePhase(idMega.phases, row)}
-                                            </td>
-                                        ))}
-                                    </tr>
-                                </React.Fragment>
-                            ))
-                    ) : (
-                        <Box sx={{display: 'flex'}}>
-                            <CircularProgress/>
-                        </Box>
-                    )
-                }
-                </tbody>
-            </table>
+            {data ? (
+                <table className={'tableStateIdMegaToContour'}>
+                    <tbody>
+                    {contour
+                        .map(row => (
+                            <React.Fragment key={row}>
+                                <tr>
+                                    <td>{row}</td>
+                                    {mappingData(data).map(idMega => (
+                                        <td key={idMega.name}
+                                            style={{backgroundColor: getColor(row, idMega.cursor)}}>
+                                            {getValue(row, idMega.cursor, idMega.name, idMega.goal, row)}
+                                        </td>
+                                    ))}
+                                </tr>
+                                <tr className={'rowAction'}>
+                                    <td/>
+                                    {mappingData(data).map(idMega => (
+                                        <td key={idMega.name}>
+                                            {getActivePhase(idMega.phases, row)}
+                                        </td>
+                                    ))}
+                                </tr>
+                            </React.Fragment>
+                        ))}
+                    </tbody>
+                </table>
+            ) : (
+                <Box sx={{display: 'flex'}}>
+                    <CircularProgress/>
+                </Box>
+            )}
         </div>
     )
 }
