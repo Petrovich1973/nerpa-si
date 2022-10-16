@@ -8,7 +8,7 @@ export default function PageDashboard() {
     return (
         <div>
             <Typography align={"center"} variant="h2" component="h1" sx={{lineHeight: 1}} gutterBottom>
-                Мониторинг режима состояния приложений
+                Мониторинг состояния
             </Typography>
             <PanelMonitoring/>
             <StateIdMegaMonitoring/>

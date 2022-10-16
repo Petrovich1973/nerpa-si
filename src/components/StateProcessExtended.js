@@ -18,9 +18,9 @@ function delay(millis) {
 }
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 export default function StateIdMegaProcess() {
@@ -60,11 +60,10 @@ export default function StateIdMegaProcess() {
         void goFetch()
 
         return () => {
-            console.log('unMount')
             cancelTimer()
             abortController.abort()
         }
-    }, [state])
+    }, [promise])
 
     return (
         <div style={{

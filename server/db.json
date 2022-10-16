@@ -1,6 +1,7 @@
 {
   "status": {
-    "run": true
+    "run": true,
+    "jbt": 32000000
   },
   "idMega": {
     "13": {

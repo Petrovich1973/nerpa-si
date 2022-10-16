@@ -1,11 +1,13 @@
 import * as React from "react"
 import {ContextApp} from "../reducer"
 import {Box, Button, FormControlLabel, Switch, TextField} from "@mui/material"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import CloseIcon from '@mui/icons-material/Close'
 
 const thresholdInitial = '50000'
 export default function StateIdMegaConfiguration() {
+
+    let navigate = useNavigate()
 
     const {state} = React.useContext(ContextApp)
     const {relationship} = state
@@ -29,6 +31,7 @@ export default function StateIdMegaConfiguration() {
     }, [relationship])
 
     const onClickTd = (td) => {
+
         const newState = newRelationship.map(relationship => {
             if (relationship.idMega !== td.idMega) return ({...relationship})
 
@@ -44,19 +47,14 @@ export default function StateIdMegaConfiguration() {
             setNewRelationship(newState)
             setGoal(td.contour)
         }
-
-        // if(td.contour !== 'stop') setNewRelationship(newState)
-
-        // setNewRelationship(newState)
     }
 
     const onClickTr = (contour) => {
+
         const newState = newRelationship.map(relationship => ({
             ...relationship,
             contour
         }))
-
-        // if (contour !== 'stop') setNewRelationship(newState)
 
         setNewRelationship(newState)
         setGoal(contour)
@@ -74,9 +72,12 @@ export default function StateIdMegaConfiguration() {
         if (Number.isInteger(+valueNew)) setThreshold(event.target.value)
     }
 
+    const onStartProcessTransition = () => {
+        navigate(`${process.env.PUBLIC_URL}/process`)
+    }
+
     return (
         <div>
-
             <div style={{
                 padding: '1.4em',
                 margin: '1em 0',
@@ -149,7 +150,7 @@ export default function StateIdMegaConfiguration() {
                         Reset
                     </Button>
                     &nbsp;&nbsp;
-                    <Button variant="contained" onClick={() => alert('Send!')} disabled={!selected.length}>
+                    <Button variant="contained" onClick={onStartProcessTransition} disabled={!selected.length}>
                         {selected.length ? 'Поехали!' : 'Не выбраны Тб'}
                     </Button>
                 </div>

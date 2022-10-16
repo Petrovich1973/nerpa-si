@@ -1,22 +1,19 @@
 import * as React from "react"
-import IconActionTransition from "../icons/IconActionTransition"
-import {Button} from "@mui/material"
+import {ViewModule, ViewList} from '@mui/icons-material'
+import {Tab, Tabs} from "@mui/material"
 import IconQueue from "../icons/IconQueue"
-import { Link } from "react-router-dom"
 
 
-const PanelProcess = () => {
+export default function PanelProcess({
+                                         view = 0, onChange = () => {
+    }
+                                     }) {
     return (
         <div className={'panelMonitoring'}>
-            <Button
-                component={Link}
-                to={`${process.env.PUBLIC_URL}/create`}
-                variant="contained"
-                size="medium"
-                startIcon={<IconActionTransition width="24" height="24"/>}
-                sx={{backgroundColor: '#000000'}}>
-                создать задачу перехода
-            </Button>
+            <Tabs value={view} onChange={onChange} aria-label="tabs">
+                <Tab icon={<ViewModule/>} aria-label="simple" tabIndex={0}/>
+                <Tab icon={<ViewList/>} aria-label="extended" tabIndex={1}/>
+            </Tabs>
             <div className={'panelMonitoring_queueBox'}>
                 <span>очередь ЖБТ по всем ТБ</span>
                 <div className={'panelMonitoring_queueBox_iconBox'}>
@@ -27,5 +24,3 @@ const PanelProcess = () => {
         </div>
     )
 }
-
-export default PanelProcess

@@ -1,15 +1,14 @@
-import React, {useState, useRef, useEffect, useCallback} from "react"
-import {ContextApp, pathTransition, configInitial} from "../reducer"
+import React, {useState, useEffect} from "react"
+import {ContextApp} from "../reducer"
 import io from 'socket.io-client'
-import axios from "axios"
-import {Button} from "@mui/material"
+import {Box, CircularProgress} from "@mui/material"
 
 const socket = io('http://localhost:7000', {
     transports: ['websocket', 'polling']
 })
 
-const WebSocketComponent = () => {
-    const {state, dispatch} = React.useContext(ContextApp)
+export default function StateProcessSimple() {
+    const {state} = React.useContext(ContextApp)
     const [data, setData] = useState(null)
 
     const {contour, color} = state
@@ -21,12 +20,6 @@ const WebSocketComponent = () => {
         })
 
     }, [])
-
-    const onClickChangeStatus = async () => {
-        const response = await axios.put('http://localhost:7000/test', {run: !data})
-        const result = response.data
-
-    }
 
     const mappingData = (idMegas) => Object.keys(idMegas).map(key => ({...idMegas[key], name: key}))
 
@@ -42,11 +35,11 @@ const WebSocketComponent = () => {
 
     const getActivePhase = (phases, row) => {
 
-        if(phases === null) return ('')
+        if (phases === null) return ('')
 
         const active = Object.keys(phases).find(key => (phases[key] === 'active')) || null
 
-        if(active && active.indexOf(row) === 0) {
+        if (active && active.indexOf(row) === 0) {
             if (active === "main_stop_back" ||
                 active === "main_stop_online" ||
                 active === "stop_standIn_back" ||
@@ -58,16 +51,11 @@ const WebSocketComponent = () => {
     }
 
     return (
-        <div>
-            <h3>WebSocketComponent</h3>
-            <div>
-                <Button onClick={onClickChangeStatus}>Change status</Button>
-            </div>
-            <div>
-                <table className={'tableStateIdMegaToContour'}>
-                    <tbody>
-                    {
-                        data &&
+        <div style={{textAlign: "center"}}>
+            <table className={'tableStateIdMegaToContour'}>
+                <tbody>
+                {
+                    data ? (
                         contour
                             .map(row => (
                                 <React.Fragment key={row}>
@@ -90,13 +78,14 @@ const WebSocketComponent = () => {
                                     </tr>
                                 </React.Fragment>
                             ))
-                    }
-                    </tbody>
-                </table>
-            </div>
+                    ) : (
+                        <Box sx={{display: 'flex'}}>
+                            <CircularProgress/>
+                        </Box>
+                    )
+                }
+                </tbody>
+            </table>
         </div>
     )
 }
-
-export default WebSocketComponent
-// mappingData(data)

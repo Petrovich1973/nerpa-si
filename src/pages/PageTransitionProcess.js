@@ -1,11 +1,19 @@
 import * as React from "react"
 import Typography from "@mui/material/Typography"
 import IconActionTransition from "../icons/IconActionTransition"
-import StateIdMegaProcess from "../components/StateIdMegaProcess"
+import StateProcessExtended from "../components/StateProcessExtended"
 import PanelProcess from "../components/PanelProcess"
-import WebSocketComponent from "../components/WebSocket"
+import StateProcessSimple from "../components/StateProcessSimple"
+
+
 
 export default function PageTransitionProcess() {
+
+    const [view, setView] = React.useState(0)
+
+    const viewMode = [<StateProcessSimple/>, <StateProcessExtended/>]
+
+    const onChangeView = (event, newValue) => setView(newValue)
 
     return (
         <div>
@@ -18,9 +26,8 @@ export default function PageTransitionProcess() {
                 &nbsp;
                 <div>Процесс перехода</div>
             </Typography>
-            <WebSocketComponent/>
-            <PanelProcess/>
-            {/*<StateIdMegaProcess/>*/}
+            <PanelProcess view={view} onChange={onChangeView}/>
+            {viewMode[view]}
         </div>
     )
 }
