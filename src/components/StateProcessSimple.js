@@ -79,7 +79,7 @@ export default function StateProcessSimple() {
                     </tbody>
                 </table>
             ) : (
-                <Box sx={{display: 'flex'}}>
+                <Box sx={{display: 'flex', justifyContent: "center"}}>
                     <CircularProgress/>
                 </Box>
             )}
