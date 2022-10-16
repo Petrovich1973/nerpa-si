@@ -10,8 +10,8 @@
       "phases": {
         "main_stop_back": "active",
         "main_stop_online": "ready",
-        "stop_standIn_back": "ready",
-        "stop_standIn_online": "ready"
+        "stop_standIn_online": "ready",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
@@ -174,8 +174,10 @@
       "cursor": "stop",
       "goal": "standIn",
       "phases": {
-        "stop_standIn_back": "active",
-        "stop_standIn_online": "ready"
+        "main_stop_back": "complete",
+        "main_stop_online": "complete",
+        "stop_standIn_online": "active",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
@@ -662,8 +664,8 @@
       "phases": {
         "main_stop_back": "active",
         "main_stop_online": "ready",
-        "stop_standIn_back": "ready",
-        "stop_standIn_online": "ready"
+        "stop_standIn_online": "ready",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
@@ -828,8 +830,8 @@
       "phases": {
         "main_stop_back": "active",
         "main_stop_online": "ready",
-        "stop_standIn_back": "ready",
-        "stop_standIn_online": "ready"
+        "stop_standIn_online": "ready",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
@@ -1150,9 +1152,14 @@
       }
     },
     "52": {
-      "cursor": "standIn",
-      "goal": null,
-      "phases": null,
+      "cursor": "stop",
+      "goal": "standIn",
+      "phases": {
+        "main_stop_back": "complete",
+        "main_stop_online": "complete",
+        "stop_standIn_online": "active",
+        "stop_standIn_back": "ready"
+      },
       "applications": {
         "FORT": {
           "main": {
@@ -1316,8 +1323,8 @@
       "phases": {
         "main_stop_back": "active",
         "main_stop_online": "ready",
-        "stop_standIn_back": "ready",
-        "stop_standIn_online": "ready"
+        "stop_standIn_online": "ready",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
@@ -1643,8 +1650,8 @@
       "phases": {
         "main_stop_back": "active",
         "main_stop_online": "ready",
-        "stop_standIn_back": "ready",
-        "stop_standIn_online": "ready"
+        "stop_standIn_online": "ready",
+        "stop_standIn_back": "ready"
       },
       "applications": {
         "FORT": {
