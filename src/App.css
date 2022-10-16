@@ -133,13 +133,36 @@
     margin-left: -20px;
     top: 0;
     border: 20px solid transparent; /* Прозрачные границы */
-    border-top: 10px solid #c6c6c6; /* Добавляем треугольник */
-    animation-name: jumpingIcon;
+    border-top: 10px solid #828282; /* Добавляем треугольник */
+    animation-name: jumpingIconBottom;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 700ms;
 }
-@keyframes jumpingIcon {
-    0% {top: 0;}
-    70% {top: -10px;}
-    100% {top: 0;}
+@keyframes jumpingIconBottom {
+    0% {top: 0; opacity: 1}
+    70% {top: -10px; opacity: 0}
+    100% {top: 0; opacity: 1}
+}
+
+.directionToMain {
+    display: block;
+    position: relative;
+    height: 0;
+}
+.directionToMain:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0;
+    border: 20px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #828282; /* Добавляем треугольник */
+    animation-name: jumpingIconTop;
+    animation-iteration-count: infinite;
+    animation-duration: 700ms;
+}
+@keyframes jumpingIconTop {
+    0% {bottom: -10px; opacity: 0}
+    70% {bottom: 0; opacity: 1}
+    100% {bottom: -10px; opacity: 0}
 }

@@ -33,17 +33,22 @@ export default function StateProcessSimple() {
         return ('')
     }
 
-    const getActivePhase = (phases, row) => {
+    const getActivePhase = (phases, row, direction) => {
 
         if (phases === null) return ('')
 
         const active = Object.keys(phases).find(key => (phases[key] === 'active')) || null
 
         if (active && active.indexOf(row) === 0) {
-            if (active === "main_stop_back" ||
+            if (direction === 'bottom' && (active === "main_stop_back" ||
                 active === "main_stop_online" ||
                 active === "stop_standIn_back" ||
-                active === "stop_standIn_online") return (<div className={'directionToStandIn'}/>)
+                active === "stop_standIn_online")) return (<div className={'directionToStandIn'}/>)
+            if (direction === 'top' && (active === "standIn_stop_back" ||
+                active === "standIn_stop_online" ||
+                active === "stop_main_back" ||
+                active === "stop_main_online")) return (<div className={'directionToMain'}/>)
+            return ('')
         }
 
         return ('')
@@ -57,6 +62,14 @@ export default function StateProcessSimple() {
                     {contour
                         .map(row => (
                             <React.Fragment key={row}>
+                                <tr className={'rowAction'}>
+                                    <td/>
+                                    {mappingData(data).map(idMega => (
+                                        <td key={idMega.name}>
+                                            {getActivePhase(idMega.phases, row, 'top')}
+                                        </td>
+                                    ))}
+                                </tr>
                                 <tr>
                                     <td>{row}</td>
                                     {mappingData(data).map(idMega => (
@@ -70,7 +83,7 @@ export default function StateProcessSimple() {
                                     <td/>
                                     {mappingData(data).map(idMega => (
                                         <td key={idMega.name}>
-                                            {getActivePhase(idMega.phases, row)}
+                                            {getActivePhase(idMega.phases, row, 'bottom')}
                                         </td>
                                     ))}
                                 </tr>
