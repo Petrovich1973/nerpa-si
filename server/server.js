@@ -35,6 +35,7 @@ io.sockets.on('connection', (socket) => {
 })
 
 async function updateData() {
+    console.log('start updateData')
     const status = await axios.get(`${DB_URL}/status`)
     const {run, jbt} = await status.data
 
@@ -230,22 +231,26 @@ async function updateData() {
             // если не выполнены условия, то пропускаем
         })
 
-        // await console.log(newState['13'].phases)
-
         // await axios.put(`${DB_URL}/idMega`, newState)
 
-        setTimeout(() => {
-            updateData()
-        }, 3000)
+        // test update data status
+        const jbtCount = await getRandomInt(100, 1000000)
+        const r = await axios.put(`${DB_URL}/status`, {
+            run: true,
+            jbt: jbtCount
+        })
+        const rR  = await r.data.jbt
+        console.log('jbt = ', rR)
     }
 
+    setTimeout(() => {
+        updateData()
+    }, 5000)
 
 }
-void updateData()
+// void updateData()
 
 async function sendData(socket) {
-
-    // await updateData()
 
     const report = await axios.get(`${DB_URL}/idMega`)
     await console.log('response from db', new Date())
