@@ -133,5 +133,13 @@
     margin-left: -20px;
     top: 0;
     border: 20px solid transparent; /* Прозрачные границы */
-    border-top: 10px solid #7e7e7e; /* Добавляем треугольник */
+    border-top: 10px solid #c6c6c6; /* Добавляем треугольник */
+    animation-name: jumpingIcon;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes jumpingIcon {
+    0% {top: 0;}
+    70% {top: -10px;}
+    100% {top: 0;}
 }
