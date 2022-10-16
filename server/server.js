@@ -43,7 +43,7 @@ async function updateData() {
         const idMega = await axios.get(`${DB_URL}/idMega`)
         const resultIdMega = await idMega.data
 
-        const newState = {}
+        const newState = {...resultIdMega}
 
         await Object.keys(resultIdMega).forEach(idMega => {
             const {cursor, goal, phases, applications} = resultIdMega[idMega]
@@ -230,12 +230,18 @@ async function updateData() {
             // если не выполнены условия, то пропускаем
         })
 
-        const idMegaNew = await axios.put(`${DB_URL}/idMega`, newState)
+        // await console.log(newState['13'].phases)
+
+        // await axios.put(`${DB_URL}/idMega`, newState)
+
+        setTimeout(() => {
+            updateData()
+        }, 3000)
     }
 
 
 }
-
+void updateData()
 
 async function sendData(socket) {
 
