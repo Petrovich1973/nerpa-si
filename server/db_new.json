@@ -1,0 +1,100 @@
+{
+  "info": {
+    "state": [
+      {
+        "tb": 0,
+        "clientState": {
+          "currentState": "NORMAL",
+          "host": "addressHostName13.sbrf.ru",
+          "clientId": "FORD",
+          "instanceId": "dfdsfsdsdfdsf",
+          "semaphores": {
+            "additionalProp1": true,
+            "additionalProp2": true,
+            "additionalProp3": true
+          },
+          "lastUpdated": "2022-10-17T20:26:26.345Z"
+        }
+      }
+    ],
+    "states": [
+      {
+        "tb": 13,
+        "host": "addressHostName13.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 16,
+        "host": "addressHostName16.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 18,
+        "host": "addressHostName18.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 38,
+        "host": "addressHostName38.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 40,
+        "host": "addressHostName40.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 42,
+        "host": "addressHostName42.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 44,
+        "host": "addressHostName44.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 52,
+        "host": "addressHostName52.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 54,
+        "host": "addressHostName54.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 55,
+        "host": "addressHostName55.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      },
+      {
+        "tb": 70,
+        "host": "addressHostName70.sbrf.ru",
+        "lastUpdate": "2022-10-17T20:27:47.566Z",
+        "jrnQueueLength": 10000000,
+        "state": "NORMAL"
+      }
+    ]
+  }
+}
