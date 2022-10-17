@@ -18,9 +18,18 @@ const app = express()
 app.use(cors({origin: '*'}))
 app.use(bodyParser.json())
 
-app.put('/test', (req, res) => {
-    console.log(req.body)
-    res.send({test: 'OK'})
+app.get('/states/:tb', async (req, res) => {
+    const {tb = ''} = req.params
+
+    const states = await axios.get(`http://localhost:9999/states?tb=${tb}`)
+    const response = await states.data
+    await res.send(response)
+})
+
+app.get('/states', async (req, res) => {
+    const states = await axios.get(`http://localhost:9999/states`)
+    const response = await states.data
+    await res.send(response)
 })
 
 const server = app.listen(PORT, () => {

@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "nodemon ./server/server.js",
-    "db": "json-server --watch ./server/db.json --port 8000"
+    "db": "json-server --watch ./server/db.json --port 8000",
+    "dbnew": "json-server --watch ./server/db_new.json --port 9999"
   },
   "eslintConfig": {
     "extends": [
