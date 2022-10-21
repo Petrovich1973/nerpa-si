@@ -22,7 +22,7 @@ export default function ProcessTransitionItem(props) {
         <div className={'processTransitionItem'} style={{width}}>
             <div className={'processTransitionItem_nameTb'}>{tb}</div>
             <div className={'processTransitionItem_statusesGroups'}>
-                <div className={'contour_name NORMAL ' + ((state === 'NORMAL') && 'active')}>Main</div>
+                <div className={'contour_name NORMAL ' + ((state === 'NORMAL') && 'active')}>NORMAL</div>
                 {inTransition ? (targetState === 'NORMAL' ? (
                     <div className={'btn-push'}>
                         <div>
@@ -64,7 +64,7 @@ export default function ProcessTransitionItem(props) {
                         <IconArrow width={'100%'} height={'100%'} fill={'#D9D9D9'} opacity={'0'}/>
                     </div>
                 )}
-                <div className={'contour_name RESERVE ' + ((state === 'RESERVE') && 'active')}>StandIn</div>
+                <div className={'contour_name RESERVE ' + ((state === 'RESERVE') && 'active')}>STANDIN</div>
             </div>
         </div>
     )

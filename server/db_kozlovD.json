@@ -626,7 +626,7 @@
         "stepId": "STOP_SI_BACKGROUND_PROCESSES",
         "title": "Остановка фоновых процессов на StandIn",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
         "currentValue": 250,
         "targetValue": 0
@@ -636,7 +636,7 @@
         "stepId": "WAITING_JRN_QUEUE_LIMIT",
         "title": "Ожидание очереди ЖБТ до заданного лимита",
         "text": null,
-        "state": "NEW",
+        "state": "SKIPPED",
         "stepValue": null,
         "currentValue": 1000,
         "targetValue": 1000
@@ -646,7 +646,7 @@
         "stepId": "STOP_SI_ONLINE_PROCESSES",
         "title": "Остановка online процессов на StandIn",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
         "currentValue": 3500,
         "targetValue": 0
@@ -656,7 +656,7 @@
         "stepId": "WAITING_JRN_QUEUE_EMPTY",
         "title": "Ожидание очереди ЖБТ до 0",
         "text": null,
-        "state": "NEW",
+        "state": "SKIPPED",
         "stepValue": null,
         "currentValue": 1000,
         "targetValue": 1000
@@ -666,7 +666,7 @@
         "stepId": "MAIN_START_ONLINE_PROCESSES",
         "title": "Запуск online процессов на MAIN",
         "text": null,
-        "state": "NEW",
+        "state": "IN_PROGRESS",
         "stepValue": null,
         "currentValue": 3500,
         "targetValue": 0
