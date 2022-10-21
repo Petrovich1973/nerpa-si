@@ -1,13 +1,15 @@
 {
   "states": [
     {
+      "id": 0,
       "tb": 13,
       "host": "addressHostName13.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
-      "jrnQueueLength": 10000000,
+      "jrnQueueLength": 131405,
       "state": "NORMAL"
     },
     {
+      "id": 1,
       "tb": 16,
       "host": "addressHostName16.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -15,6 +17,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 2,
       "tb": 18,
       "host": "addressHostName18.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -22,6 +25,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 3,
       "tb": 38,
       "host": "addressHostName38.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -29,6 +33,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 4,
       "tb": 40,
       "host": "addressHostName40.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -36,6 +41,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 5,
       "tb": 42,
       "host": "addressHostName42.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -43,6 +49,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 6,
       "tb": 44,
       "host": "addressHostName44.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -50,6 +57,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 7,
       "tb": 52,
       "host": "addressHostName52.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -57,6 +65,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 8,
       "tb": 54,
       "host": "addressHostName54.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -64,6 +73,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 9,
       "tb": 55,
       "host": "addressHostName55.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",
@@ -71,6 +81,7 @@
       "state": "NORMAL"
     },
     {
+      "id": 10,
       "tb": 70,
       "host": "addressHostName70.sbrf.ru",
       "lastUpdate": "2022-10-17T20:27:47.566Z",

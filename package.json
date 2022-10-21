@@ -24,11 +24,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
+
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+
     "server": "nodemon ./server/server.js",
     "db": "json-server --watch ./server/db.json --port 8000",
+
+    "server-test": "nodemon server/server-test.js",
     "dbnew": "json-server --watch ./server/db_new.json --port 9999"
   },
   "eslintConfig": {
