@@ -3,6 +3,8 @@ import IconSwitchOn from "../../icons/IconSwitchOn"
 import IconSwitchOff from "../../icons/IconSwitchOff"
 import IconProcess from "../../icons/IconProcess"
 
+const stepsState = ['NEW', 'IN_PROGRESS', 'COMPLETED', 'SKIPPED']
+
 export default function Step({
                                  stepId = 'MAIN_STOP_ONLINE_PROCESSES',
                                  title = 'Остановка online процессов на MAIN',
@@ -14,38 +16,6 @@ export default function Step({
                                  threshold = 500,
                                  onClick = () => console.log('onClick')
                              }) {
-
-    const createStyles = () => {
-
-        switch (state) {
-            case 'NEW':
-                return ({
-                    boxColor: '#ECECEC',
-                    textColor: '#A5A5A5'
-                })
-            case 'IN_PROGRESS':
-                return ({
-                    boxColor: '#5C5C5C',
-                    textColor: '#B9B9B9'
-                })
-            case 'COMPLETED':
-                return ({
-                    boxColor: '',
-                    textColor: ''
-                })
-            case 'SKIPPED':
-                return ({
-                    boxColor: '',
-                    textColor: ''
-                })
-            default:
-                return ({
-                    boxColor: '',
-                    textColor: ''
-                })
-        }
-
-    }
 
     const createStep = () => {
 
@@ -206,7 +176,8 @@ export default function Step({
                 return (
                     <>
                         <div className={'step_title'}>
-                            <div className={'step_title_top'}>ЖБТ <strong>{targetValue}</strong> &#10094; {threshold}</div>
+                            <div className={'step_title_top'}>ЖБТ <strong>{targetValue}</strong> &#10094; {threshold}
+                            </div>
                             <div className={'step_title_bottom'}>
                                 {state === 'IN_PROGRESS' && <IconProcess/>}
                             </div>
