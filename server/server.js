@@ -31,7 +31,7 @@ const io = socket(server)
 
 io.sockets.on('connection', (socket) => {
     console.log(`new connection id: ${socket.id}`)
-    void sendData(socket)
+    // void sendData(socket)
 })
 
 async function updateData() {

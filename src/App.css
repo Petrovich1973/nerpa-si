@@ -126,6 +126,7 @@
     position: relative;
     height: 0;
 }
+
 .directionToStandIn:after {
     content: '';
     position: absolute; /* Абсолютное позиционирование */
@@ -138,10 +139,20 @@
     animation-iteration-count: infinite;
     animation-duration: 700ms;
 }
+
 @keyframes jumpingIconBottom {
-    0% {top: 0; opacity: 1}
-    70% {top: -10px; opacity: 0}
-    100% {top: 0; opacity: 1}
+    0% {
+        top: 0;
+        opacity: 1
+    }
+    70% {
+        top: -10px;
+        opacity: 0
+    }
+    100% {
+        top: 0;
+        opacity: 1
+    }
 }
 
 .directionToMain {
@@ -149,6 +160,7 @@
     position: relative;
     height: 0;
 }
+
 .directionToMain:after {
     content: '';
     position: absolute; /* Абсолютное позиционирование */
@@ -161,8 +173,201 @@
     animation-iteration-count: infinite;
     animation-duration: 700ms;
 }
+
 @keyframes jumpingIconTop {
-    0% {bottom: -10px; opacity: 0}
-    70% {bottom: 0; opacity: 1}
-    100% {bottom: -10px; opacity: 0}
+    0% {
+        bottom: -10px;
+        opacity: 0
+    }
+    70% {
+        bottom: 0;
+        opacity: 1
+    }
+    100% {
+        bottom: -10px;
+        opacity: 0
+    }
+}
+
+
+.processTransitionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.processTransitionItem {
+    box-sizing: border-box;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px 5px;
+    gap: 6px;
+}
+
+.processTransitionItem_nameTb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    color: #B4B4B4;
+}
+
+.processTransitionItem_statusesGroups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    gap: 6px;
+    background: linear-gradient(180deg, #EEFFD8 33.33%, #FFFDEC 76.04%);
+}
+
+.processTransitionContainer .contour_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    border-radius: 100px;
+}
+
+.processTransitionContainer .contour_name.NORMAL.active {
+    background: #CEF998;
+}
+
+.processTransitionContainer .contour_name.RESERVE.active {
+    background: #FFF59D;
+}
+
+.processTransitionContainer .btn-push {
+    position: relative;
+    cursor: pointer;
+}
+
+.processTransitionContainer .btn-push .btn-push_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: #BEBEBE;
+    font-size: 10px;
+}
+
+.processTransitionContainer .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    height: 3em;
+}
+
+.processTransitionContainer .step .step_title {
+    flex-grow: 1;
+    width: 50%;
+    white-space: nowrap;
+    margin-left: -50%;
+    margin-right: -50%;
+}
+
+.processTransitionContainer .step .step_title_top {
+    font-size: 10px;
+}
+
+.processTransitionContainer .step .step_value {
+    width: 50%;
+    text-align: left;
+}
+
+.processTransitionContainer .step .step_value:last-child {
+    width: 50%;
+    text-align: right;
+}
+
+.processTransitionContainer .NEW_MAIN_STOP_BACKGROUND_PROCESSES,
+.processTransitionContainer .NEW_MAIN_START_BACKGROUND_PROCESSES,
+.processTransitionContainer .NEW_MAIN_STOP_ONLINE_PROCESSES,
+.processTransitionContainer .NEW_MAIN_START_ONLINE_PROCESSES,
+.processTransitionContainer .NEW_START_SI_ONLINE_PROCESSES,
+.processTransitionContainer .NEW_STOP_SI_ONLINE_PROCESSES,
+.processTransitionContainer .NEW_START_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .NEW_STOP_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .NEW_WAITING_JRN_QUEUE_LIMIT,
+.processTransitionContainer .NEW_WAITING_JRN_QUEUE_EMPTY {
+    background-color: #ECECEC;
+    color: #A5A5A5;
+}
+
+.processTransitionContainer .IN_PROGRESS_MAIN_STOP_BACKGROUND_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_MAIN_START_BACKGROUND_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_MAIN_STOP_ONLINE_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_MAIN_START_ONLINE_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_START_SI_ONLINE_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_STOP_SI_ONLINE_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_START_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_STOP_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .IN_PROGRESS_WAITING_JRN_QUEUE_LIMIT,
+.processTransitionContainer .IN_PROGRESS_WAITING_JRN_QUEUE_EMPTY {
+    background-color: #5C5C5C;
+    color: #B9B9B9;
+    border: 1px solid #fff;
+}
+
+.processTransitionContainer .COMPLETED_MAIN_STOP_BACKGROUND_PROCESSES,
+.processTransitionContainer .COMPLETED_MAIN_START_BACKGROUND_PROCESSES,
+.processTransitionContainer .COMPLETED_MAIN_STOP_ONLINE_PROCESSES,
+.processTransitionContainer .COMPLETED_MAIN_START_ONLINE_PROCESSES {
+    background-color: #D0E7B0;
+    color: #9B9B9B;
+}
+
+.processTransitionContainer .COMPLETED_START_SI_ONLINE_PROCESSES,
+.processTransitionContainer .COMPLETED_STOP_SI_ONLINE_PROCESSES,
+.processTransitionContainer .COMPLETED_START_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .COMPLETED_STOP_SI_BACKGROUND_PROCESSES {
+    background-color: #F3EFAC;
+    color: #9B9B9B;
+}
+
+.processTransitionContainer .COMPLETED_WAITING_JRN_QUEUE_LIMIT,
+.processTransitionContainer .COMPLETED_WAITING_JRN_QUEUE_EMPTY {
+    background-color: transparent;
+    color: #515151;
+    border: 1px solid #000;
+}
+
+.processTransitionContainer .SKIPPED_MAIN_STOP_BACKGROUND_PROCESSES,
+.processTransitionContainer .SKIPPED_MAIN_START_BACKGROUND_PROCESSES,
+.processTransitionContainer .SKIPPED_MAIN_STOP_ONLINE_PROCESSES,
+.processTransitionContainer .SKIPPED_MAIN_START_ONLINE_PROCESSES {
+    background-color: #F8DED9;
+    color: #AC8B84;
+}
+
+.processTransitionContainer .SKIPPED_START_SI_ONLINE_PROCESSES,
+.processTransitionContainer .SKIPPED_STOP_SI_ONLINE_PROCESSES,
+.processTransitionContainer .SKIPPED_START_SI_BACKGROUND_PROCESSES,
+.processTransitionContainer .SKIPPED_STOP_SI_BACKGROUND_PROCESSES {
+    background-color: #F8DED9;
+    color: #AC8B84;
+}
+
+.processTransitionContainer .SKIPPED_WAITING_JRN_QUEUE_LIMIT,
+.processTransitionContainer .SKIPPED_WAITING_JRN_QUEUE_EMPTY {
+    background-color: #F8DED9;
+    color: #AC8B84;
+    border: 1px solid #AC8B84;
 }

@@ -29,7 +29,8 @@
     "eject": "react-scripts eject",
     "server": "nodemon ./server/server",
     "db": "json-server --watch ./server/db.json --port 9000",
-    "app": "nodemon ./server/app"
+    "app": "nodemon ./server/app",
+    "db-kozlovD": "json-server --watch ./server/db_kozlovD.json --port 4444"
   },
   "eslintConfig": {
     "extends": [

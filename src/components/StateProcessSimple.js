@@ -1,99 +1,60 @@
 import React, {useState, useEffect} from "react"
-import {ContextApp} from "../reducer"
-import io from 'socket.io-client'
 import {Box, CircularProgress} from "@mui/material"
+import axios from "axios"
+import ProcessTransitionItem from "./ProcessTransitionItem"
 
-const socket = io('http://localhost:7000', {
-    transports: ['websocket', 'polling']
-})
+const host = 'http://localhost:4444'
+const endpoints = ['/steps', '/states']
 
 export default function StateProcessSimple() {
-    const {state} = React.useContext(ContextApp)
-    const [data, setData] = useState(null)
-
-    const {contour, color} = state
+    const [steps, setSteps] = useState(null)
+    const [states, setStates] = useState(null)
+    const [waiting, setWaiting] = useState(false)
 
     useEffect(() => {
 
-        socket.on('statusMega', (res) => {
-            setData(res)
-        })
+        (async () => {
+            setWaiting(true)
+            const result = await axios.all([...endpoints].map((endpoint) => axios.get(host + endpoint)))
+            const response = [...result]
+            await setSteps(response[0].data)
+            await setStates(response[1].data)
+            setWaiting(false)
+        })()
+
+        return () => {
+            // abort request
+        }
 
     }, [])
 
-    const mappingData = (idMegas) => Object.keys(idMegas).map(key => ({...idMegas[key], name: key}))
-
-    const getColor = (contour, cursor) => {
-        if (contour === cursor) return (color[contour])
-        return ('white')
-    }
-
-    const getValue = (contour, cursor, name) => {
-        if (contour === cursor) return name
-        return ('')
-    }
-
-    const getActivePhase = (phases, row, direction) => {
-
-        if (phases === null) return ('')
-
-        const active = Object.keys(phases).find(key => (phases[key] === 'active')) || null
-
-        if (active && active.indexOf(row) === 0) {
-            if (direction === 'bottom' && (active === "main_stop_back" ||
-                active === "main_stop_online" ||
-                active === "stop_standIn_back" ||
-                active === "stop_standIn_online")) return (<div className={'directionToStandIn'}/>)
-            if (direction === 'top' && (active === "standIn_stop_back" ||
-                active === "standIn_stop_online" ||
-                active === "stop_main_back" ||
-                active === "stop_main_online")) return (<div className={'directionToMain'}/>)
-            return ('')
-        }
-
-        return ('')
-    }
+    if (waiting) return (
+        <Box sx={{display: 'flex', justifyContent: "center"}}>
+            получение данных <CircularProgress/>
+        </Box>
+    )
 
     return (
         <div style={{textAlign: "center"}}>
-            {data ? (
-                <table className={'tableStateIdMegaToContour'}>
-                    <tbody>
-                    {contour
-                        .map(row => (
-                            <React.Fragment key={row}>
-                                <tr className={'rowAction'}>
-                                    <td/>
-                                    {mappingData(data).map(idMega => (
-                                        <td key={idMega.name}>
-                                            {getActivePhase(idMega.phases, row, 'top')}
-                                        </td>
-                                    ))}
-                                </tr>
-                                <tr>
-                                    <td>{row}</td>
-                                    {mappingData(data).map(idMega => (
-                                        <td key={idMega.name}
-                                            style={{backgroundColor: getColor(row, idMega.cursor)}}>
-                                            {getValue(row, idMega.cursor, idMega.name, idMega.goal, row)}
-                                        </td>
-                                    ))}
-                                </tr>
-                                <tr className={'rowAction'}>
-                                    <td/>
-                                    {mappingData(data).map(idMega => (
-                                        <td key={idMega.name}>
-                                            {getActivePhase(idMega.phases, row, 'bottom')}
-                                        </td>
-                                    ))}
-                                </tr>
-                            </React.Fragment>
-                        ))}
-                    </tbody>
-                </table>
+            {Boolean(steps && states && Object.keys(steps).length && states.length) ? (
+                <div className={'processTransitionContainer'}>
+                    {states
+                        .sort((a, b) => (a.tb - b.tb))
+                        // .slice(0,8)
+                        .map(element => {
+                            const {tb = 3000} = element
+                            return (
+                                <ProcessTransitionItem
+                                    key={tb}
+                                    width={`calc(100% / ${states.length})`}
+                                    {...element}
+                                    steps={steps[tb]}/>
+                            )
+                        })}
+                </div>
             ) : (
                 <Box sx={{display: 'flex', justifyContent: "center"}}>
-                    <CircularProgress/>
+                    <span>нет данных</span>
                 </Box>
             )}
         </div>
