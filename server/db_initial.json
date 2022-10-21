@@ -1812,3 +1812,1510 @@
     }
   }
 }
+/////////DB_KOZLOV_D////////////
+{
+  "steps": {
+    "16": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "18": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "33": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "38": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "IN_PROGRESS",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "40": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "42": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "COMPLETED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "44": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "52": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "SKIPPED",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "54": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "55": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "67": [
+      {
+        "index": 0,
+        "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "MAIN_STOP_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "START_SI_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "START_SI_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ],
+    "70": [
+      {
+        "index": 0,
+        "stepId": "STOP_SI_BACKGROUND_PROCESSES",
+        "title": "Остановка фоновых процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      },
+      {
+        "index": 1,
+        "stepId": "WAITING_JRN_QUEUE_LIMIT",
+        "title": "Ожидание очереди ЖБТ до заданного лимита",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 2,
+        "stepId": "STOP_SI_ONLINE_PROCESSES",
+        "title": "Остановка online процессов на StandIn",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 3,
+        "stepId": "WAITING_JRN_QUEUE_EMPTY",
+        "title": "Ожидание очереди ЖБТ до 0",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 1000,
+        "targetValue": 1000
+      },
+      {
+        "index": 4,
+        "stepId": "MAIN_START_ONLINE_PROCESSES",
+        "title": "Запуск online процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 3500,
+        "targetValue": 0
+      },
+      {
+        "index": 5,
+        "stepId": "MAIN_START_BACKGROUND_PROCESSES",
+        "title": "Запуск фоновых процессов на MAIN",
+        "text": null,
+        "state": "NEW",
+        "stepValue": null,
+        "currentValue": 250,
+        "targetValue": 0
+      }
+    ]
+  },
+  "states": [
+    {
+      "tb": 44,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        610568178
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 52,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        612976521
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 54,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        614861199
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 55,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        617105419
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 67,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        619302355
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 70,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        622596811
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 38,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        624949540
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 40,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        626874182
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 42,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        628252521
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 33,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        629769576
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 16,
+      "state": "NORMAL",
+      "inTransition": true,
+      "targetState": "RESERVE",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        631387333
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    },
+    {
+      "tb": 18,
+      "state": "RESERVE",
+      "inTransition": true,
+      "targetState": "NORMAL",
+      "semaphores": [
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_MAIN",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "BACKGROUND_PROCESSES_ENABLED_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_MAIN_TO_SI_ENABLED",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "JRN_SI_TO_MAIN_ENABLED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_MAIN",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "NEED_CHECK_SYNC_FLAGS_SI",
+          "value": true,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_SI_STARTED",
+          "value": false,
+          "targetValue": null
+        },
+        {
+          "semaphore": "SWITCH_TO_MAIN_STARTED",
+          "value": false,
+          "targetValue": null
+        }
+      ],
+      "lastUpdate": [
+        2022,
+        10,
+        21,
+        14,
+        19,
+        25,
+        633952103
+      ],
+      "jrnQueueLength": 0,
+      "host": "host"
+    }
+  ],
+  "clientGroups": [
+    {
+      "clientName": "test-background-client",
+      "mainBackgroundCount": 11,
+      "mainOnlineCount": 0,
+      "stopCount": 0,
+      "siBackgroundCount": 1,
+      "siOnlineCount": 0,
+      "tbList": [
+        44,
+        52,
+        54,
+        55,
+        67,
+        70,
+        38,
+        40,
+        42,
+        33,
+        16,
+        18
+      ],
+      "errors": []
+    },
+    {
+      "clientName": "test-online-client",
+      "mainBackgroundCount": 0,
+      "mainOnlineCount": 11,
+      "stopCount": 0,
+      "siBackgroundCount": 0,
+      "siOnlineCount": 1,
+      "tbList": [
+        44,
+        52,
+        54,
+        55,
+        67,
+        70,
+        38,
+        40,
+        42,
+        33,
+        16,
+        18
+      ],
+      "errors": []
+    }
+  ]
+}

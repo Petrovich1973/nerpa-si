@@ -178,7 +178,7 @@ export default function Step({
                         <div className={'step_title'}>
                             <div className={'step_title_top'}>ЖБТ <strong>{targetValue}</strong> &#10094; {threshold}
                             </div>
-                            <div className={'step_title_bottom'}>
+                            <div className={'step_title_bottom'} style={{marginTop: '.2em'}}>
                                 {state === 'IN_PROGRESS' && <IconProcess/>}
                             </div>
                         </div>
@@ -189,7 +189,7 @@ export default function Step({
                     <>
                         <div className={'step_title'}>
                             <div className={'step_title_top'}>ЖБТ <strong>{targetValue}</strong> = 0</div>
-                            <div className={'step_title_bottom'}>
+                            <div className={'step_title_bottom'} style={{marginTop: '.2em'}}>
                                 {state === 'IN_PROGRESS' && <IconProcess/>}
                             </div>
                         </div>
