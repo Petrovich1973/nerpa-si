@@ -11,7 +11,7 @@ const {nodes, getRandomInt} = require("./lib")
 const PORT = 7000
 
 const DB_ADDRESS = 'http://localhost'
-const DB_PORT = 8000
+const DB_PORT = 9000
 const DB_URL = `${DB_ADDRESS}:${DB_PORT}`
 
 const app = express()
