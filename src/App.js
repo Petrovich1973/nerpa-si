@@ -23,7 +23,7 @@ export default function App() {
     return (
         <ContextApp.Provider value={{state, dispatch}}>
             <ThemeProvider theme={theme}>
-                <Container component="main" maxWidth="xl" sx={{mb: 4}}>
+                <Container component="main" maxWidth="xl" sx={{mb: 4, maxWidth: '90% !important'}}>
                     <BrowserRouter>
                         <CssBaseline/>
                         <Routes>
