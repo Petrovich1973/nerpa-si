@@ -40,7 +40,7 @@ export default function StateProcessSimple() {
                 <div className={'processTransitionContainer'}>
                     {states
                         .sort((a, b) => (a.tb - b.tb))
-                        // .slice(0,8)
+                        // .filter(tb => tb.tb === 16 || tb.tb === 40 || tb.tb === 44 || tb.tb === 54)
                         .map(element => {
                             const {tb = 3000} = element
                             return (

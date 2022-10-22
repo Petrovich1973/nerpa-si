@@ -229,6 +229,7 @@
     padding: 10px;
     gap: 6px;
     background: linear-gradient(180deg, #EEFFD8 33.33%, #FFFDEC 76.04%);
+    border-radius: 32px;
 }
 
 .processTransitionContainer .contour_name {
@@ -237,14 +238,20 @@
     align-items: center;
     padding: 12px 0;
     border-radius: 100px;
+    color: #cfcfcf;
+    font-weight: 700;
 }
 
 .processTransitionContainer .contour_name.NORMAL.active {
     background: #CEF998;
+    color: #7a7a7a;
+    font-weight: 900;
 }
 
 .processTransitionContainer .contour_name.RESERVE.active {
     background: #FFF59D;
+    color: #7a7a7a;
+    font-weight: 900;
 }
 
 .processTransitionContainer .btn-push {
@@ -313,6 +320,26 @@
     width: 50%;
     text-align: right;
     font-weight: 900;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+.processTransitionContainer .completed-steps-all {
+    font-weight: 900;
+    opacity: 1;
+    color: #c2c2c2;
+    text-shadow: black 0 1px;
 }
 
 .processTransitionContainer .NEW_MAIN_STOP_BACKGROUND_PROCESSES,

@@ -132,8 +132,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 120,
+        "targetValue": 130
       },
       {
         "index": 1,
@@ -142,8 +142,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 720
       },
       {
         "index": 2,
@@ -152,8 +152,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 1020,
+        "targetValue": 2480
       },
       {
         "index": 3,
@@ -162,8 +162,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 65
       },
       {
         "index": 4,
@@ -172,8 +172,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 1020,
+        "targetValue": 2480
       },
       {
         "index": 5,
@@ -182,8 +182,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 120,
+        "targetValue": 130
       }
     ],
     "38": [
@@ -194,8 +194,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 120,
+        "targetValue": 130
       },
       {
         "index": 1,
@@ -204,8 +204,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 578
       },
       {
         "index": 2,
@@ -214,8 +214,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 760,
+        "targetValue": 2740
       },
       {
         "index": 3,
@@ -224,8 +224,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 421
       },
       {
         "index": 4,
@@ -234,8 +234,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 760,
+        "targetValue": 2740
       },
       {
         "index": 5,
@@ -244,8 +244,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 121,
+        "targetValue": 129
       }
     ],
     "40": [
@@ -256,8 +256,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       },
       {
         "index": 1,
@@ -266,8 +266,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 2,
@@ -276,8 +276,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 3,
@@ -286,8 +286,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 4,
@@ -296,8 +296,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 5,
@@ -306,8 +306,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       }
     ],
     "42": [
@@ -318,8 +318,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       },
       {
         "index": 1,
@@ -328,8 +328,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 2,
@@ -338,8 +338,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 3,
@@ -348,8 +348,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 4,
@@ -358,8 +358,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 5,
@@ -368,8 +368,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       }
     ],
     "44": [
@@ -380,8 +380,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 100,
+        "targetValue": 150
       },
       {
         "index": 1,
@@ -390,8 +390,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 658,
+        "targetValue": 658
       },
       {
         "index": 2,
@@ -400,8 +400,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 1,
+        "targetValue": 3499
       },
       {
         "index": 3,
@@ -410,8 +410,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 658,
+        "targetValue": 658
       },
       {
         "index": 4,
@@ -420,8 +420,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 3,
+        "targetValue": 3497
       },
       {
         "index": 5,
@@ -430,8 +430,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 61,
+        "targetValue": 189
       }
     ],
     "52": [
@@ -442,8 +442,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 10,
+        "targetValue": 240
       },
       {
         "index": 1,
@@ -452,8 +452,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 501,
+        "targetValue": 501
       },
       {
         "index": 2,
@@ -462,8 +462,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 1000,
+        "targetValue": 2500
       },
       {
         "index": 3,
@@ -472,8 +472,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 501,
+        "targetValue": 501
       },
       {
         "index": 4,
@@ -482,8 +482,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 700,
+        "targetValue": 2800
       },
       {
         "index": 5,
@@ -492,8 +492,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 39,
+        "targetValue": 211
       }
     ],
     "54": [
@@ -502,40 +502,40 @@
         "stepId": "MAIN_STOP_BACKGROUND_PROCESSES",
         "title": "Остановка фоновых процессов на MAIN",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       },
       {
         "index": 1,
         "stepId": "WAITING_JRN_QUEUE_LIMIT",
         "title": "Ожидание очереди ЖБТ до заданного лимита",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 215
       },
       {
         "index": 2,
         "stepId": "MAIN_STOP_ONLINE_PROCESSES",
         "title": "Остановка online процессов на MAIN",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 2500
       },
       {
         "index": 3,
         "stepId": "WAITING_JRN_QUEUE_EMPTY",
         "title": "Ожидание очереди ЖБТ до 0",
         "text": null,
-        "state": "NEW",
+        "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 215
       },
       {
         "index": 4,
@@ -564,60 +564,60 @@
         "stepId": "STOP_SI_BACKGROUND_PROCESSES",
         "title": "Остановка фоновых процессов на StandIn",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       },
       {
         "index": 1,
         "stepId": "WAITING_JRN_QUEUE_LIMIT",
         "title": "Ожидание очереди ЖБТ до заданного лимита",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 2,
         "stepId": "STOP_SI_ONLINE_PROCESSES",
         "title": "Остановка online процессов на StandIn",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 3,
         "stepId": "WAITING_JRN_QUEUE_EMPTY",
         "title": "Ожидание очереди ЖБТ до 0",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 0
       },
       {
         "index": 4,
         "stepId": "MAIN_START_ONLINE_PROCESSES",
         "title": "Запуск online процессов на MAIN",
         "text": null,
-        "state": "NEW",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 5,
         "stepId": "MAIN_START_BACKGROUND_PROCESSES",
         "title": "Запуск фоновых процессов на MAIN",
         "text": null,
-        "state": "NEW",
+        "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 210,
+        "targetValue": 40
       }
     ],
     "70": [
@@ -628,18 +628,18 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 250,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 250
       },
       {
         "index": 1,
         "stepId": "WAITING_JRN_QUEUE_LIMIT",
         "title": "Ожидание очереди ЖБТ до заданного лимита",
         "text": null,
-        "state": "SKIPPED",
+        "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 200
       },
       {
         "index": 2,
@@ -648,8 +648,8 @@
         "text": null,
         "state": "COMPLETED",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 0,
+        "targetValue": 3500
       },
       {
         "index": 3,
@@ -658,8 +658,8 @@
         "text": null,
         "state": "SKIPPED",
         "stepValue": null,
-        "currentValue": 1000,
-        "targetValue": 1000
+        "currentValue": 0,
+        "targetValue": 200
       },
       {
         "index": 4,
@@ -668,8 +668,8 @@
         "text": null,
         "state": "IN_PROGRESS",
         "stepValue": null,
-        "currentValue": 3500,
-        "targetValue": 0
+        "currentValue": 1200,
+        "targetValue": 2300
       },
       {
         "index": 5,
@@ -686,7 +686,7 @@
   "states": [
     {
       "tb": 44,
-      "state": "NORMAL",
+      "state": "RESERVE",
       "inTransition": true,
       "targetState": "RESERVE",
       "semaphores": [
@@ -745,7 +745,7 @@
     },
     {
       "tb": 52,
-      "state": "RESERVE",
+      "state": "NORMAL",
       "inTransition": true,
       "targetState": "NORMAL",
       "semaphores": [
@@ -863,7 +863,7 @@
     },
     {
       "tb": 55,
-      "state": "RESERVE",
+      "state": "NORMAL",
       "inTransition": true,
       "targetState": "NORMAL",
       "semaphores": [
@@ -922,7 +922,7 @@
     },
     {
       "tb": 70,
-      "state": "RESERVE",
+      "state": "NORMAL",
       "inTransition": true,
       "targetState": "NORMAL",
       "semaphores": [
@@ -1040,7 +1040,7 @@
     },
     {
       "tb": 40,
-      "state": "NORMAL",
+      "state": "RESERVE",
       "inTransition": true,
       "targetState": "RESERVE",
       "semaphores": [
@@ -1099,7 +1099,7 @@
     },
     {
       "tb": 42,
-      "state": "RESERVE",
+      "state": "NORMAL",
       "inTransition": true,
       "targetState": "NORMAL",
       "semaphores": [

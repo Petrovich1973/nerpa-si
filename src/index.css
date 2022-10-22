@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  min-height: 100vh;
+  background: radial-gradient(67.25% 35.91% at 50% 59.86%, #B3B3B3 0%, #F3F3F3 75.54%);
+}

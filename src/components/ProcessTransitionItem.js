@@ -13,9 +13,11 @@ export default function ProcessTransitionItem(props) {
     } = props || {}
 
     const onSort = (a, b) => {
-        if(targetState === 'RESERVE') return b.index > a.index ? -1 : 1
+        if (targetState === 'RESERVE') return b.index > a.index ? -1 : 1
         return a.index > b.index ? -1 : 1
     }
+
+    const isCompleted = !steps.some(step => step.state !== 'COMPLETED' && step.state !== 'SKIPPED')
 
 
     return (
@@ -24,12 +26,16 @@ export default function ProcessTransitionItem(props) {
             <div className={'processTransitionItem_statusesGroups'}>
                 <div className={'contour_name NORMAL ' + ((state === 'NORMAL') && 'active')}>NORMAL</div>
                 {inTransition ? (targetState === 'NORMAL' ? (
-                    <div className={'btn-push'}>
-                        <div>
-                            <IconArrow fill={'#565656'} width={'100%'} height={'100%'}/>
+                    !isCompleted ? (
+                        <div className={'btn-push'}>
+                            <div>
+                                <IconArrow fill={'#565656'} width={'100%'} height={'100%'}/>
+                            </div>
+                            <div className={'btn-push_text'}>PUSH</div>
                         </div>
-                        <div className={'btn-push_text'}>PUSH</div>
-                    </div>
+                    ) : (
+                        <div className={'completed-steps-all'}>COMPLETED</div>
+                    )
                 ) : (
                     <div>
                         <IconArrow width={'100%'} height={'100%'} fill={'#D9D9D9'} opacity={'0.2'}/>
@@ -47,14 +53,18 @@ export default function ProcessTransitionItem(props) {
                             currentState={state}
                             targetState={targetState}
                             {...step}/>
-                        ))}
+                    ))}
                 {inTransition ? (targetState === 'RESERVE' ? (
-                    <div className={'btn-push'}>
-                        <div style={{transform: 'scale(1, -1)'}}>
-                            <IconArrow fill={'#565656'} width={'100%'} height={'100%'}/>
+                    !isCompleted ? (
+                        <div className={'btn-push'}>
+                            <div style={{transform: 'scale(1, -1)'}}>
+                                <IconArrow fill={'#565656'} width={'100%'} height={'100%'}/>
+                            </div>
+                            <div className={'btn-push_text'}>PUSH</div>
                         </div>
-                        <div className={'btn-push_text'}>PUSH</div>
-                    </div>
+                    ) : (
+                        <div className={'completed-steps-all'}>COMPLETED</div>
+                    )
                 ) : (
                     <div style={{transform: 'scale(1, -1)'}}>
                         <IconArrow width={'100%'} height={'100%'} fill={'#D9D9D9'} opacity={'0.2'}/>
