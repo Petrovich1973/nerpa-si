@@ -29,9 +29,9 @@ export default function StateProcessSimple() {
     }, [])
 
     if (waiting) return (
-        <Box sx={{display: 'flex', justifyContent: "center"}}>
+        <div style={{display: 'flex', justifyContent: "center"}}>
             получение данных <CircularProgress/>
-        </Box>
+        </div>
     )
 
     return (
@@ -53,9 +53,9 @@ export default function StateProcessSimple() {
                         })}
                 </div>
             ) : (
-                <Box sx={{display: 'flex', justifyContent: "center"}}>
+                <div style={{display: 'flex', justifyContent: "center"}}>
                     <span>нет данных</span>
-                </Box>
+                </div>
             )}
         </div>
     )

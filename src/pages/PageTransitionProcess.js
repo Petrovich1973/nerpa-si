@@ -1,5 +1,4 @@
 import * as React from "react"
-import Typography from "@mui/material/Typography"
 import IconActionTransition from "../icons/IconActionTransition"
 import StateProcessExtended from "../components/StateProcessExtended"
 import PanelProcess from "../components/PanelProcess"
@@ -17,15 +16,20 @@ export default function PageTransitionProcess() {
 
     return (
         <div>
-            <Typography
-                align={"center"}
-                variant="h2"
-                component="h1"
-                sx={{lineHeight: 1, display: "flex", alignItems: "center", justifyContent: "center"}} gutterBottom>
+            <div
+                style={{
+                    fontSize: '3.75rem',
+                    letterSpacing: '-0.00833em',
+                    marginBottom: '0.35em',
+                    lineHeight: 1,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                }}>
                 <div><IconActionTransition width="48" height="48"/></div>
                 &nbsp;
                 <div>Процесс перехода</div>
-            </Typography>
+            </div>
             <PanelProcess view={view} onChange={onChangeView}/>
             {viewMode[view]}
         </div>
