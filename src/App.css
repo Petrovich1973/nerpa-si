@@ -282,6 +282,7 @@
     box-sizing: border-box;
     padding: 2px 4%;
     height: 3.4em;
+    overflow: hidden;
 }
 
 .processTransitionContainer .step .step_title {
