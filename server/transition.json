@@ -1,0 +1,118 @@
+{
+  "step": [
+    {
+      "id": 0,
+      "name": "MAIN_STOP_BACKGROUND_PROCESSES"
+    },
+    {
+      "id": 1,
+      "name": "MAIN_START_BACKGROUND_PROCESSES"
+    },
+    {
+      "id": 2,
+      "name": "MAIN_STOP_ONLINE_PROCESSES"
+    },
+    {
+      "id": 3,
+      "name": "MAIN_START_ONLINE_PROCESSES"
+    },
+    {
+      "id": 4,
+      "name": "SI_STOP_BACKGROUND_PROCESSES"
+    },
+    {
+      "id": 5,
+      "name": "SI_START_BACKGROUND_PROCESSES"
+    },
+    {
+      "id": 6,
+      "name": "SI_STOP_ONLINE_PROCESSES"
+    },
+    {
+      "id": 7,
+      "name": "SI_START_ONLINE_PROCESSES"
+    },
+    {
+      "id": 8,
+      "name": "WAITING_JRN_QUEUE_LIMIT"
+    },
+    {
+      "id": 9,
+      "name": "WAITING_JRN_QUEUE_EMPTY"
+    }
+  ],
+  "step_to_transition": [
+    {
+      "id": 0,
+      "idStep": 0,
+      "order": 0,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 1,
+      "idStep": 8,
+      "order": 1,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 2,
+      "idStep": 2,
+      "order": 2,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 3,
+      "idStep": 9,
+      "order": 3,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 4,
+      "idStep": 7,
+      "order": 4,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 5,
+      "idStep": 5,
+      "order": 5,
+      "target_contour": "RESERVE"
+    },
+    {
+      "id": 6,
+      "idStep": 4,
+      "order": 0,
+      "target_contour": "NORMAL"
+    },
+    {
+      "id": 7,
+      "idStep": 8,
+      "order": 1,
+      "target_contour": "NORMAL"
+    },
+    {
+      "id": 8,
+      "idStep": 8,
+      "order": 2,
+      "target_contour": "NORMAL"
+    },
+    {
+      "id": 9,
+      "idStep": 9,
+      "order": 3,
+      "target_contour": "NORMAL"
+    },
+    {
+      "id": 10,
+      "idStep": 3,
+      "order": 4,
+      "target_contour": "NORMAL"
+    },
+    {
+      "id": 11,
+      "idStep": 1,
+      "order": 5,
+      "target_contour": "NORMAL"
+    }
+  ]
+}
