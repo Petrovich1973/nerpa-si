@@ -231,6 +231,7 @@
     gap: 6px;
     background: linear-gradient(180deg, #EEFFD8 33.33%, #FFFDEC 76.04%);
     border-radius: 32px;
+    border-top: 1px solid #d2dec3;
 }
 
 .processTransitionContainer .contour_name {
@@ -241,6 +242,12 @@
     border-radius: 100px;
     color: #cfcfcf;
     font-weight: 700;
+}
+@media screen and (max-width:732px) {
+    .processTransitionContainer .contour_name {
+        position: relative;
+        font-size: 60%;
+    }
 }
 
 .processTransitionContainer .contour_name.NORMAL.active {
@@ -344,6 +351,8 @@
     text-shadow: black 0 1px;
     display: flex;
     justify-content: center;
+    position: relative;
+    font-size: 60%;
 }
 
 .processTransitionContainer .NEW_MAIN_STOP_BACKGROUND_PROCESSES,
